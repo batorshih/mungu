@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 from django.utils.html import format_html
-from filebrowser.fields import FileBrowseField
+
 # Create your models here.
 class Nershil(models.Model):
 	name = models.CharField(max_length=100)
