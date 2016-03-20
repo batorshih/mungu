@@ -7,7 +7,7 @@ from main.models import aimag_city,soum_district,bag_khoroo
 class TamgaAdmin(admin.ModelAdmin):
     list_display = ['name' , 'nershiluud','getimage']
     filter_horizontal = [ 'nershil',]
-    search_fields  = [ 'nershil', 'name',]
+    search_fields  = [ 'nershil__name', 'name',]
     
 
 admin.site.register(Tamgas,TamgaAdmin)

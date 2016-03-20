@@ -18,6 +18,9 @@ class Tamgas(models.Model):
         return format_html('<img height="100"  src="/assets/%s" />' % self.image.name)
     def nershiluud(self):
         return "\n".join([p.name for p in self.nershil.all()])
+    class Meta:
+        verbose_name = u"тамга-"
+        
 
 
 
